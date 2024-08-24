@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>School Attendance</h1>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="admin-panel" style="display: none;">
+            <h2>Admin Panel</h2>
+            <button id="admin-add">Add Student</button>
+            <button id="admin-remove">Remove Student</button>
+            <!-- We can add any other admin panel content -->
+        </section>
+        <section id="teacher-panel" style="display: none;">
+            <h2>Teacher Panel</h2>
+            <form id="teacher-mark-attendance-form">
+                <label><input type="checkbox" data-student-roll="S001"> Student 1</label>
+        <label><input type="checkbox" data-student-roll="S002"> Student 2</label>
+        <label><input type="checkbox" data-student-roll="S003"> Student 3</label>
+                <button type="submit">Submit Attendance</button>
+            </form>
+            <!-- We can add any other teacher panel content -->
+        </section>
+        <section id="student-panel" style="display: none;">
+            <h2>Student Panel</h2>
+            <button id="student-check-attendance">Check Attendance</button>
+            <p id="student-attendance-percentage">Attendance Percentage: <span id="attendance-value">0%</span></p>
+            <!-- We can add any other student panel content -->
+        </section>                                
+    </main>
+
+    <footer>
+        <p>2023 School Attendance App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
